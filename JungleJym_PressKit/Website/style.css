@@ -1,0 +1,123 @@
+html {
+    scroll-behavior: auto;
+    cursor: url('cursors/cursor.png'), auto;
+}
+
+body {
+    text-align: center;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    height: 4000px;
+    width: 3000px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    /*background-color: black;*/
+    /*z-index: -11;*/
+}
+
+#unity-canvas {
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    width: 200px;
+    height: 200px;
+    /*background: none;*/
+    background-color: transparent; 
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.container {
+    position: relative; /* This makes it the reference for the absolutely positioned child */
+    width: 3000px;
+    height: 4000px;
+    overflow: auto;
+    z-index: -10;
+    background-color: black;
+}
+
+.inner-container {
+    position: absolute;
+    top: calc(50vh - 50px);
+    left: calc(50vw - 50px);
+    right: calc(50vw - 50px);
+    bottom: calc(50vh - 50px);
+    /*min-width: 1000px;*/
+    background-color: black;
+    border: solid white 2px;
+    z-index: -9;
+}
+
+img {
+    border: solid white 2px;
+}
+
+.text-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensures text is above the background container */
+}
+
+.text {
+    color: black;
+    position: absolute;
+    z-index: 10;
+    /*transform: translate(-50%, -50%);*/
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    /*font-weight: 400;*/
+    font-style: normal;
+    font-size: 20px;
+    
+}
+
+a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border: solid white 2px;
+    cursor: url('cursors/pointer.png'), auto;
+}
+
+a:hover {
+    color: deeppink;
+    border: solid deeppink 2px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 2.5s ease;
+}
+#loading-text {
+    color: white;
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+
+/*#defaultCanvas0 {*/
+/*    position: absolute;*/
+/*    overflow: hidden;*/
+/*}*/
