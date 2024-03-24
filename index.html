@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+<!--    load fonts    -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
@@ -8,40 +9,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Rubik+Scribble&display=swap"
           rel="stylesheet">
+    
+<!--    functionality for loading screen    -->
     <script src="loading.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js"></script>
+    
+<!--    local p5 lib  -->
+    <script src="libs/p5.js"></script>
+    
+<!--    style    -->
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>JungleJym PressKit</title>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Prevent mouse wheel scrolling
-            window.addEventListener('wheel', function (event) {
-                event.preventDefault();
-            }, {passive: false});
-
-            // Optionally, prevent touch scrolling on touch-enabled devices
-            window.addEventListener('touchmove', function (event) {
-                event.preventDefault();
-            }, {passive: false});
-        });
-    </script>
     <link rel="stylesheet" href="style.css">
+    
+<!--    prevent regular scrolling    -->
+    <script src="noScroll.js"></script>
 </head>
+
+
 <body>
+<!--display load overlay on startup-->
 <div id="loading-overlay">
     <span id="loading-text">Loading...</span>
 </div>
+
+<!--p5 sketch-->
 <main>
     <script src="scroll.js"></script>
 </main>
 
+<!--background-->
 <div class="container">
     <div class="inner-container">
     </div>
 </div>
 
+
+<!--content-->
 <img src="imgs/wasd.png" alt="wasd to move"
      style="position: absolute; top: calc(50vh); left: 1500px; width: 130px; height: auto; border: none; transform: translate(-50%, 0)">
 
@@ -66,7 +70,6 @@
     Other Video Placeholder
 </div>
 
-
 <a href="#index.html" style="position: absolute; top: calc(50vh + 1450px); left: 950px;">Link 2</a>
 
 <div class="text" style="position: absolute; top: calc(50vh + 2450px); left: 1350px; color: white;">Team info.</div>
@@ -89,6 +92,8 @@
 <div style="position: absolute; top: 2800px; left: 1800px; width: 320px; height: 180px; background-color: #bbb;">
     Community Video Placeholder #3
 </div>
+
+<!--Unity-->
 <canvas id="unity-canvas" width=200 height=200 tabindex="-1"></canvas>
 <script src="Build/WebGL_Build.loader.js"></script>
 <script src="startHandler.js"></script>
