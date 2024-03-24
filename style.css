@@ -75,7 +75,10 @@ img {
     /*font-weight: 400;*/
     font-style: normal;
     font-size: 20px;
-    
+}
+
+.text:hover {
+    cursor: text;
 }
 
 a {
