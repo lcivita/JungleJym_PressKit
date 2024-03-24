@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var text = document.getElementById('loading-text');
     setTimeout(() => {
         text.style.opacity = 0;
-    }, 1300);
+    }, 1500);
     
     
     setTimeout(function() {
@@ -12,6 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
             overlay.style.display = 'none';
             document.body.style.overflow = 'auto';
-        }, 2200);
-    }, 2200);
+        }, 2500);
+    }, 2500);
 });
