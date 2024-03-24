@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script src="loading.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>JungleJym PressKit</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Prevent mouse wheel scrolling
+        window.addEventListener('wheel', function(event) {
+          event.preventDefault();
+        }, { passive: false });
+
+        // Optionally, prevent touch scrolling on touch-enabled devices
+        window.addEventListener('touchmove', function(event) {
+          event.preventDefault();
+        }, { passive: false });
+      });
+    </script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div id="loading-overlay">
+    Loading...
+  </div>
+  <script>
+    window.onload = function() {
+      window.scrollTo(2000, 2000);
+    };
+  </script>
+  <script src="scroll.js"></script>
+  <div class="container"></div>
+
+<!--  <div class="text-wrapper">-->
+    <div class="text" style="top: 2000px; left: 2000px;transform: translate(-50%, -50%); z-index: 5;">Text 1</div>
+<!--    <div class="text" style="top: 150px; left: 120px;">Text 2</div>-->
+    <!-- More text elements here -->
+<!--  </div>-->
+  
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+<!--  <h1>ASDDSAOJNDKJASDNJ:KASLNDKLJ:NASDJKLNSKLAJDNADLJKSADSANLDNSADLKJNSADKJ</h1>-->
+  
+    <canvas id="unity-canvas" width=200 height=200 tabindex="-1"></canvas>
+    <script src="Build/WebGL_Build.loader.js"></script>
+    <script>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+
+        var canvas = document.querySelector("#unity-canvas");
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+        canvas.style.position = "fixed";
+
+        document.body.style.textAlign = "left";
+      }
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/WebGL_Build.data",
+        frameworkUrl: "Build/WebGL_Build.framework.js",
+        codeUrl: "Build/WebGL_Build.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Imuhjym",
+        productName: "JungleJym_PressKit",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
