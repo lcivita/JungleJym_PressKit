@@ -9,6 +9,8 @@ let Wdown = false, Adown = false, Sdown = false, Ddown = false;
 function setup() {
     window.scrollTo(1500 - windowWidth/2, windowHeight/3);
     moveDir = createVector(0, 0);
+    let canvas = createCanvas(1,1);
+    canvas.parent("unity-canvas");
 
     window.onblur = function() {
         moveDir.set(0, 0); // Reset moveDir to 0,0

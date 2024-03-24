@@ -15,12 +15,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 2200);
     }, 2200);
 });
-//
-// document.addEventListener('DOMContentLoaded', function() {
-//     const loadingText = document.getElementById('loading-text');
-//
-//     // Start the fade-out effect for the text immediately
-//     setTimeout(() => {
-//         loadingText.style.opacity = 0;
-//     }, 1500); // Delay before the fade starts, adjust as needed
-// });
