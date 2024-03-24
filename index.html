@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Rubik+Scribble&display=swap"
+          rel="stylesheet">
     <script src="loading.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js"></script>
@@ -14,94 +15,82 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>JungleJym PressKit</title>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Prevent mouse wheel scrolling
-        window.addEventListener('wheel', function(event) {
-          event.preventDefault();
-        }, { passive: false });
+        document.addEventListener('DOMContentLoaded', function () {
+            // Prevent mouse wheel scrolling
+            window.addEventListener('wheel', function (event) {
+                event.preventDefault();
+            }, {passive: false});
 
-        // Optionally, prevent touch scrolling on touch-enabled devices
-        window.addEventListener('touchmove', function(event) {
-          event.preventDefault();
-        }, { passive: false });
-      });
+            // Optionally, prevent touch scrolling on touch-enabled devices
+            window.addEventListener('touchmove', function (event) {
+                event.preventDefault();
+            }, {passive: false});
+        });
     </script>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-  <div id="loading-overlay">
+</head>
+<body>
+<div id="loading-overlay">
     <span id="loading-text">Loading...</span>
-  </div>
+</div>
 <main>
-  <script src="scroll.js"></script>
+    <script src="scroll.js"></script>
 </main>
-  
+
 <div class="container">
-  <div class="inner-container">
-  </div>
+    <div class="inner-container">
+    </div>
 </div>
 
-  <img src="imgs/wasd.png" alt="wasd to move" style="position: absolute; top: calc(50vh); left: 1500px; width: 130px; height: auto; border: none; transform: translate(-50%, 0)">
+<img src="imgs/wasd.png" alt="wasd to move"
+     style="position: absolute; top: calc(50vh); left: 1500px; width: 130px; height: auto; border: none; transform: translate(-50%, 0)">
 
-<div class="text" style="font-family: 'Rubik Scribble', system-ui;position: absolute; top: calc(50vh + 500px);transform: translate(-50%, -50%); left: 1500px; width: 300px; color: white; font-size: 40px">Jungle Jym Press Kit</div>
-<div class="text" style="position: absolute; top: calc(50vh + 1000px); left: 800px; width: 400px; text-align: left; color: white;"> Game description: Here is where all the description for the game goes blah blah and random words to keep this thing going. Now I will repeat this last sentence a few times. Now I will repeat this last sentence a few times. Now I will repeat this last sentence a few times. Now I will repeat this last sentence a few times.</div>
-<img src="imgs/placeholder.png" alt="placeholder" style="position: absolute; top: calc(50vh + 730px); left: 800px; width: 300px; height: auto;">
+<div class="text"
+     style="font-family: 'Rubik Scribble', system-ui;position: absolute; top: calc(50vh + 500px);transform: translate(-50%, -50%); left: 1500px; width: 300px; color: white; font-size: 40px">
+    Jungle Jym Press Kit
+</div>
+<div class="text"
+     style="position: absolute; top: calc(50vh + 1000px); left: 800px; width: 400px; text-align: left; color: white;">
+    Game description: Here is where all the description for the game goes blah blah and random words to keep this thing
+    going. Now I will repeat this last sentence a few times. Now I will repeat this last sentence a few times. Now I
+    will repeat this last sentence a few times. Now I will repeat this last sentence a few times.
+</div>
+<img src="imgs/placeholder.png" alt="placeholder"
+     style="position: absolute; top: calc(50vh + 730px); left: 800px; width: 300px; height: auto;">
 
 <div style="position: absolute; top: calc(50vh + 1050px); left: 1500px; width: 720px; height: 480px; background-color: #ddd;">
-  Video Placeholder
+    Video Placeholder
 </div>
 
 <div style="position: absolute; top: calc(50vh + 1650px); left: 850px; width: 480px; height: 270px; background-color: #ddd;">
-  Other Video Placeholder
+    Other Video Placeholder
 </div>
-
 
 
 <a href="#index.html" style="position: absolute; top: calc(50vh + 1450px); left: 950px;">Link 2</a>
 
 <div class="text" style="position: absolute; top: calc(50vh + 2450px); left: 1350px; color: white;">Team info.</div>
 
-<img src="imgs/placeholder.png" alt="placeholder" style="position: absolute; top: 3200px; left: 900px; width: 300px; height: auto;">
+<img src="imgs/placeholder.png" alt="placeholder"
+     style="position: absolute; top: 3200px; left: 900px; width: 300px; height: auto;">
 
 <a href="#index.html" style="position: absolute; top: calc(50vh + 1300px); left: 1100px;">Link 1</a>
 <a href="#index.html" style="position: absolute; top: calc(50vh + 2050px); left: 1600px;">Contact</a>
 
-<div class="text" style="position: absolute; top: calc(50vh + 1700px); left: 1500px; color: white; text-align: left; width: 500px;">Studio description: Second blurb with random information. Here we say more things. Then we keep saying them more and more. This keeps on going until we have enough content to fill up a significant part of the screen. Hurray! We've done it.</div>
-
-<img src="imgs/placeholder.png" alt="placeholder" style="position: absolute; top: 2600px; left: 800px; width: 250px; height: auto;">
-<div style="position: absolute; top: 2800px; left: 1800px; width: 320px; height: 180px; background-color: #bbb;">
-  Community Video Placeholder #3
+<div class="text"
+     style="position: absolute; top: calc(50vh + 1700px); left: 1500px; color: white; text-align: left; width: 500px;">
+    Studio description: Second blurb with random information. Here we say more things. Then we keep saying them more and
+    more. This keeps on going until we have enough content to fill up a significant part of the screen. Hurray! We've
+    done it.
 </div>
 
+<img src="imgs/placeholder.png" alt="placeholder"
+     style="position: absolute; top: 2600px; left: 800px; width: 250px; height: auto;">
+<div style="position: absolute; top: 2800px; left: 1800px; width: 320px; height: 180px; background-color: #bbb;">
+    Community Video Placeholder #3
+</div>
 <canvas id="unity-canvas" width=200 height=200 tabindex="-1"></canvas>
-    <script src="Build/WebGL_Build.loader.js"></script>
-    <script>
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
-
-        var canvas = document.querySelector("#unity-canvas");
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
-        canvas.style.position = "fixed";
-
-        document.body.style.textAlign = "left";
-      }
-
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/WebGL_Build.data",
-        frameworkUrl: "Build/WebGL_Build.framework.js",
-        codeUrl: "Build/WebGL_Build.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "Imuhjym",
-        productName: "JungleJym_PressKit",
-        productVersion: "0.1",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
-    </script>
-  </body>
+<script src="Build/WebGL_Build.loader.js"></script>
+<script src="startHandler.js"></script>
+</body>
 </html>
